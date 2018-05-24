@@ -1,4 +1,5 @@
 import React,  {Component} from 'react';
+import { Link } from 'react-router-dom'
 //material ui component
 
 import AppBar from 'material-ui/AppBar';
@@ -22,7 +23,7 @@ class Header extends Component{
 			<div>
 			
 			<AppBar style={this.appStyle}
-				title= "Welcome to Dashboard"
+				title= "FOODPOINT"
 				 iconElementRight={ <Account email={this.state.email}/>}
 				onLeftIconButtonClick={() => this.toggleSidebar()}
 				/>
@@ -30,9 +31,10 @@ class Header extends Component{
 				<Drawer open={this.state.sidebarOpen}
 					docked= {false}
 					onRequestChange={() => this.toggleSidebar()} >
-					<MenuItem> Home </MenuItem>
-					<MenuItem> History </MenuItem>
-					<MenuItem> Things to do </MenuItem>
+					<MenuItem><Link to="/dashboard">Home</Link></MenuItem>
+					<MenuItem><Link to="/link">link </Link></MenuItem>
+					<MenuItem><Link to="/CreateLink">form</Link></MenuItem>
+					
 				</Drawer>
 								 
 			</div>

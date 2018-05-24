@@ -14,10 +14,10 @@ class Login extends Component{
   }
 
 floatingLabelFocusStyle ={
-  color:  "#512DA8"
+  color:  "#512FH8"
 }
 underlineStyle ={
-  borderColor : "#512DA8"
+  borderColor : "#42f4d4"
 }
 
 
